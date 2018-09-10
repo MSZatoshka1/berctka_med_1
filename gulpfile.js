@@ -20,6 +20,12 @@ function html(){
     return gulp.src('./views/*.html')
     .pipe(gulp.dest('sait/html/'));
 }
+function fonts(){
+    return gulp.src('less/fonts.less')
+    .pipe(less())
+    .pipe(gulp.dest('public/css/'))
+    .pipe(gulp.dest('sait/css/'));
+}
 function watch (){
     nodemon({
         script: 'index.js',
@@ -27,6 +33,7 @@ function watch (){
         tasks: ['browserify']
       })
     gulp.watch('./less/*.less', gulp.series(less_,css));
+    gulp.watch('./less/fonts.less', gulp.series(fonts));
     gulp.watch('./less/*/*.less', gulp.series(less_,css));
     gulp.watch('./views/*.html', gulp.series(html));
 }
