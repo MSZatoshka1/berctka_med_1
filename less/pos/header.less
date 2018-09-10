@@ -1,0 +1,45 @@
+header{
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 76vh;
+    position: relative;
+}
+.header_claider{
+    .row();
+    align-items: center;
+    height: inherit;
+    // justify-content: center;
+}
+.claider_str{
+position: absolute;
+ margin: 0 40px;
+ &:first-child{
+     left: 40px;
+ }
+ &:last-child{
+    right: 40px;
+ }
+}
+.claider_block{
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    font-family: "ChaletComprimeCologneEighty";
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.block_claider_name{
+    .fz(157);
+}
+.block_claider_text{
+    .fz(40);
+    margin-bottom: 15px;
+}
+.block_claider_button{
+    font-family:inherit;
+    color: inherit;
+    padding: 0.19rem 1.3em;
+    letter-spacing: 1.2px;
+    .fz(30);
+    text-transform: inherit;
+    background-color: #42b3e5;
+}

@@ -1,0 +1,52 @@
+// ChaletComprimeCologneEighty
+.article{
+    font-family: "ChaletComprimeCologneEighty";
+    margin-bottom: 60px;
+}
+.article_block{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.name_block{
+    .fz(90);
+    &:nth-child(odd){
+        color: #42b3e5;
+    }
+    &:nth-child(even){
+        color: #ffffff;
+    }
+}
+.text_block{
+    .fz(24);
+    &:nth-child(even){
+        color: #737373;
+    }
+    &:nth-child(odd){
+        color: #ffffff;
+    }
+ 
+}
+
+.about_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .size(4);
+    .col();
+}
+.about_iconka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -1.8rem;
+    width: 313.6rem;
+    height: 333.6rem;
+    position: absolute;
+    background-size: cover;
+    // background-image: url('../img/ygolnik.svg')
+}
+.about_iconka_text{
+
+}

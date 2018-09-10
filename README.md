@@ -1,2 +1,2 @@
-# berctka_med_1
-Верстка
+# node_start_berctka
+настройка чисто под верстку 
